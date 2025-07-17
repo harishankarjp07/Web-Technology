@@ -1,85 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Service Booking - QuickFix Hub</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Service Booking - QuickFix Hub</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
-<body style="background-color: #bfc7bc;" class="pt-5 d-flex flex-column min-vh-100">
+<body class="pt-5" style="background-color: #bfc7bc;">
 
-  <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #080101;">
-    <div class="container-fluid">
-      <a class="navbar-brand text-white fw-bold" href="#">QuickFix Hub</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+   <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #080101; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+     <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-light" href="#">QuickFix Hub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" style="background-color: #0e0b0bee;">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title text-light">Menu</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link text-light" href="wthome.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link text-light" href="forms.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link text-light" href="history.html">History</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container my-5">
-    <h2 class="text-center mb-4">Book Your Service</h2>
-    <div class="row justify-content-center g-4">
-      <div class="col-lg-6">
-        <div class="card shadow">
-          <div class="card-body bg-light">
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label fw-bold">Name*</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-              </div>
-
-              <div class="mb-3">
-                <label for="email" class="form-label fw-bold">Email*</label>
-                <input type="email" class="form-control" id="email" placeholder="example@mail.com" required>
-              </div>
-
-              <div class="mb-3">
-                <label for="mobile" class="form-label fw-bold">Mobile Number*</label>
-                <input type="tel" class="form-control" id="mobile" placeholder="10-digit number" required pattern="[0-9]{10}">
-              </div>
-              <div class="mb-3">
-                <label for="Address" class="form-label fw-bold">Address*</label>
-                <div class="mb-3">
-                <label for="service" class="form-label fw-bold">What Service Do You Need?*</label>
-                <select class="form-select" id="service" required>
-                  <option value="" selected disabled>Select a service</option>
-                  <option value="full">Full Service</option>
-                  <option value="oil">Oil Service</option>
-                  <option value="brake">Brake Check</option>
-                  <option value="parts">Parts Need to Be Changed</option>
-                </select>
-              </div>
-
-              <div class="d-grid">
-                <button type="submit" class="btn btn-dark">Submit Booking</button>
-              </div>
-            </form>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" style="background-color: #080808ee;">
+          <div class="offcanvas-header">
+             <h5 class="offcanvas-title text-light">Menu</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+             <ul class="navbar-nav">
+               <li class="nav-item"><a class="nav-link text-light" href="wthome.html">Home</a></li>
+               <li class="nav-item"><a class="nav-link text-light" href="forms.html">Services</a></li>
+               <li class="nav-item"><a class="nav-link text-light" href="history.html">History</a></li>
+             </ul>
           </div>
         </div>
-      </div>
+     </div>
+   </nav>
 
-    
-    </div>
-  </div>
-  <footer class="mt-auto bg-dark text-center text-white py-3">
-    QuickFix Hub © 2000–2025
-  </footer>
+   <div class="container my-5 px-3">
+     <h2 class="text-center mb-4">Service Booking Form</h2>
+     <div class="mx-auto rounded shadow p-4" style="max-width: 600px; background-color: #ffffff;">
+        <form>
+          <div class="mb-3">
+             <label for="name" class="form-label fw-bold">Name*</label>
+             <input type="text" class="form-control" id="name" placeholder="Enter your name" required />
+          </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+          <div class="mb-3">
+             <label for="email" class="form-label fw-bold">Email*</label>
+             <input type="email" class="form-control" id="email" placeholder="example@mail.com" required />
+          </div>
+
+          <div class="mb-3">
+             <label for="mobile" class="form-label fw-bold">Mobile Number*</label>
+             <input type="tel" class="form-control" id="mobile" placeholder="10-digit number" pattern="[0-9]{10}" required />
+          </div>
+
+          <div class="mb-3">
+             <label for="address" class="form-label fw-bold">Address*</label>
+             <textarea class="form-control" id="address" rows="3" placeholder="Enter your address" required></textarea>
+          </div>
+
+          <div class="mb-3">
+             <label for="service" class="form-label fw-bold">Select Service*</label>
+             <select class="form-select" id="service" required>
+               <option value="" selected disabled>Select a service</option>
+               <option value="full">Full Service</option>
+               <option value="oil">Oil Service</option>
+               <option value="brake">Brake Check</option>
+               <option value="parts">Parts Replacement</option>
+             </select>
+          </div>
+
+          <div class="d-grid mt-4">
+             <button type="submit" class="btn btn-dark">Submit Booking</button>
+          </div>
+        </form>
+     </div>
+   </div>
+
+   <footer class="mt-auto bg-dark text-center text-white py-3">
+     QuickFix Hub © 2000–2025
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
